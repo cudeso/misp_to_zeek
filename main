@@ -1,0 +1,16 @@
+##! Load Intel Framework
+@load policy/integration/collective-intel
+@load policy/frameworks/intel/seen
+@load policy/frameworks/intel/do_notice
+redef Intel::read_files += {
+	"/opt/zeek/share/zeek/site/misp_to_zeek/misp-domain.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-hostname.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-ip-dst.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-ip-src.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-ja3-fingerprint-md5.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-md5.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-sha1.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-sha256.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-sha512.intel",
+    "/opt/zeek/share/zeek/site/misp_to_zeek/misp-url.intel"
+};
